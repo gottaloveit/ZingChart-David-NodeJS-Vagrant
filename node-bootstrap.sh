@@ -26,6 +26,15 @@ then
     # Install latest stable version of MongoDB
     apt-get install -y mongodb-10gen
 
+    # Add all your deps
+	npm install -g keystone
+	npm install -g express
+	npm install -g jade
+	npm install -g cloudinary
+	npm install -g marked
+	npm install -g embedly
+	npm install -g mv
+    
     # Symlink our host to the guest /var folder
     ln -s /vagrant /var
 
